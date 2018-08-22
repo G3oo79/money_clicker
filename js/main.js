@@ -26,3 +26,37 @@ function multiply(a, b) {
 
   alert("Result: " + result);
 }
+
+//Arithmetic operators
+//addion "+"
+//subtraction "-"
+//multiplication "*"
+//division "/"
+//modulus(remainder) "%"
+//increment "++"
+//decrement "--"
+
+function incrementNumber() {
+  var a = 2;
+  a++;
+  alert(a);
+}
+
+function decrementNumber() {
+  var b = 3;
+  b--;
+  alert(b);
+}
+
+function divide(c, d) {
+  var total;
+  total = c / d;
+  alert("Result: " + total);
+}
+
+function remainder() {
+  var a = 5;
+  var remain;
+  remain = a % 2;
+  alert("Total: " + remain);
+}

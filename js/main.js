@@ -35,6 +35,24 @@ function multiply(a, b) {
 //modulus(remainder) "%"
 //increment "++"
 //decrement "--"
+ var firstVariable = "this is my 2nd variable";
+ var secondVariable = "second variable ready";
+ displayVariables();
+
+ age();
+
+ oddOrEven();
+
+function displayVariables() {
+  var localVariable = "this is my local variable";
+  console.log(firstVariable)
+}
+
+function displayAnotherVariable() {
+    console.log("hello");
+}
+
+displayAnotherVariable();
 
 function incrementNumber() {
   var a = 2;
@@ -59,4 +77,65 @@ function remainder() {
   var remain;
   remain = a % 2;
   alert("Total: " + remain);
+}
+
+function assignment() {
+  var a = 10;
+  a += 2;
+  a *= 4;
+  a = a + 2; //the same as a += 2;
+  a = a * 2; //the same as a *= 2;
+
+  alert(a);
+}
+
+function age() {
+  var age = 11;
+
+  if (age != 18) {
+    console.log("old enough");
+  } else {
+    console.log("not old enough");
+  }
+}
+
+function oddOrEven(){
+  var number = 6
+
+  if (number % 2 == 0) {
+    console.log("the number is even");
+  } else {
+    console.log("the number is odd");
+  }
+}
+
+function dayOfTheWeek() {
+  var day;
+
+  switch (new Date().getDay()) {
+    case 0:
+      day = "Sunday";
+      break;
+    case 1:
+      day = "Monday";
+      break;
+    case 0:
+      day = "Tuesday";
+      break;
+    case 0:
+      day = "Wednesday";
+      break;
+    case 0:
+      day = "Thursday";
+      break;
+    case 0:
+      day = "Friday";
+      break;
+    case 0:
+      day = "Saturday";
+      break;
+    default:
+
+  }
+  alert("Today's " + Time);
 }

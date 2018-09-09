@@ -38,10 +38,16 @@ function multiply(a, b) {
  var firstVariable = "this is my 2nd variable";
  var secondVariable = "second variable ready";
  displayVariables();
-
+//function calls//
  age();
 
  oddOrEven();
+
+ arrayDisplay();
+
+ whileExample();
+
+ doWhileExample();
 
 function displayVariables() {
   var localVariable = "this is my local variable";
@@ -137,5 +143,35 @@ function dayOfTheWeek() {
     default:
 
   }
-  alert("Today's " + Time);
+  alert("Today's " + day);
+}
+
+function arrayDisplay() {
+  var fruits = ["apple", "banana", "orange", "pear"];
+
+  for (var i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+  }
+}
+
+function whileExample() {
+  var text = "";
+  var i = 0;
+
+  while(i < 10) {
+    text += "\n the number is " + i;
+    i++;
+  }
+  console.log(text);
+}
+
+function doWhileExample() {
+  var text = "";
+  var i = 0;
+
+  do {
+    text += "\n The number is " + i;
+    i++;
+  } while (i < 20);
+  console.log(text);
 }

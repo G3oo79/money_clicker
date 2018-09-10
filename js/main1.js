@@ -15,7 +15,7 @@ function findInteger() {
   if (guess_number == number) {
     alert("you guessed the number");
   } else {
-    alert("You did not guess the number " + number);
+    alert("You did not guess the correct number is: " + number);
   }
 
 }

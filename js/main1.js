@@ -20,12 +20,19 @@
 
 //}
 
-function choose(day, night) {
-  switch (day) {
-    case expression:
+function changeImg() {
+  var image = document.getElementById("myImage");
+  var bodyElement = document.body;
 
-      break;
-    default:
-      
+  if (image.src.match("sun")) {
+    image.src="images/moon.jpg";
+
+    bodyElement.classList.add("night");
+    bodyElement.classList.remove("day");
+  } else {
+    image.src="images/sun.png";
+    bodyElement.classList.remove("night");
+    bodyElement.classList.add("day");
   }
-}
+
+  }

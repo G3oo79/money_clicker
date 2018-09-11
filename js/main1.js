@@ -20,19 +20,38 @@
 
 //}
 
-function changeImg() {
-  var image = document.getElementById("myImage");
-  var bodyElement = document.body;
+// function changeImg() {
+//   var image = document.getElementById("myImage");
+//   var bodyElement = document.body;
+//
+//   if (image.src.match("sun")) {
+//     image.src="images/moon.jpg";
+//
+//     bodyElement.classList.add("night");
+//     bodyElement.classList.remove("day");
+//   } else {
+//     image.src="images/sun.png";
+//     bodyElement.classList.remove("night");
+//     bodyElement.classList.add("day");
+//   }
+//
+//   }
+getMultiples();
 
-  if (image.src.match("sun")) {
-    image.src="images/moon.jpg";
+function getMultiples() {
 
-    bodyElement.classList.add("night");
-    bodyElement.classList.remove("day");
-  } else {
-    image.src="images/sun.png";
-    bodyElement.classList.remove("night");
-    bodyElement.classList.add("day");
+  for (var i = 0; i <= 100; i++) {
+
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log( i + " multiple of three and five");
+    } else if(i % 3 == 0){
+      console.log( i + " multiple of three");
+    }
+      else if(i % 5 == 0){
+        console.log( i + " multiple of five");
+    }
+      else {
+        console.log(i);
+      }
   }
-
-  }
+}

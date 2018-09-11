@@ -1,3 +1,13 @@
-body {
-  background-color: ;
+body.day {
+  background-color: #7ec0ee;
+}
+
+body.night {
+  background-color: #170266;
+}
+
+.night h1,
+.night h2 {
+  color: #fff;
+  font-weight: bold;
 }

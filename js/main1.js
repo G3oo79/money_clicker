@@ -8,14 +8,24 @@
 //hint3: use Math.ceil() to round the number generated to be an integer.
 //hint4:Use "prompt" to display a prompt box.
 
-function findInteger() {
-  var number = Math.ceil(Math.random() * 10);
-  var guess_number = prompt("Guess the number from 1 to 10 ")
+//function findInteger() {
+  //var number = Math.ceil(Math.random() * 10);
+  //var guess_number = prompt("Guess the number from 1 to 10 ")
 
-  if (guess_number == number) {
-    alert("you guessed the number");
-  } else {
-    alert("You did not guess the correct number is: " + number);
+  //if (guess_number == number) {
+    //alert("you guessed the number");
+  //} else {
+    //alert("You did not guess the correct number is: " + number);
+  //}
+
+//}
+
+function choose(day, night) {
+  switch (day) {
+    case expression:
+
+      break;
+    default:
+      
   }
-
 }

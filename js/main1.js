@@ -8,6 +8,17 @@
 //hint3: use Math.ceil() to round the number generated to be an integer.
 //hint4:Use "prompt" to display a prompt box.
 
+
+//=====================Excersise #1===============
+
+// areaSquare(4);
+// function areaSquare(side) {
+//   var area = side * side;
+//   alert(area);
+// }
+
+//=====================Exercse #2================
+
 //function findInteger() {
   //var number = Math.ceil(Math.random() * 10);
   //var guess_number = prompt("Guess the number from 1 to 10 ")
@@ -15,10 +26,11 @@
   //if (guess_number == number) {
     //alert("you guessed the number");
   //} else {
-    //alert("You did not guess the correct number is: " + number);
+    //alert("You did not guess!!! the correct number is: " + number);
   //}
 
 //}
+//======================Exercise #3================
 
 // function changeImg() {
 //   var image = document.getElementById("myImage");
@@ -36,22 +48,21 @@
 //   }
 //
 //   }
-getMultiples();
 
-function getMultiples() {
+//======================Exercise #4=====================
+findInteger();
+
+function findInteger() {
 
   for (var i = 0; i <= 100; i++) {
-
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log( i + " multiple of three and five");
+    if (i % 3 == 0 && i % 5 == 0) {
+      console.log(i + " multiple of three and five");
     } else if(i % 3 == 0){
-      console.log( i + " multiple of three");
+      console.log(i + " multiples of three");
+    } else if (i % 5 == 0) {
+      console.log(i + " multiples of five");
+    } else {
+      console.log(i);
     }
-      else if(i % 5 == 0){
-        console.log( i + " multiple of five");
-    }
-      else {
-        console.log(i);
-      }
   }
 }

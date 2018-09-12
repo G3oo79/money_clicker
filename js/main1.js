@@ -50,30 +50,65 @@
 //   }
 
 //======================Exercise #4=====================
-// findInteger();
+
+// passwordGenerator(12);
 //
-// function findInteger() {
+// function passwordGenerator(no_digits) {
+//   var generatedPassword = "";
+//   var char_list = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 //
-//   for (var i = 0; i <= 100; i++) {
-//     if (i % 3 == 0 && i % 5 == 0) {
-//       console.log(i + " multiple of three and five");
-//     } else if(i % 3 == 0){
-//       console.log(i + " multiples of three");
-//     } else if (i % 5 == 0) {
-//       console.log(i + " multiples of five");
-//     } else {
-//       console.log(i);
-//     }
+//   for (var i = 0; i < no_digits; i++) {
+//     generatedPassword += char_list.charAt(Math.floor(Math.random() * char_list.length));
 //   }
+// console.log(generatedPassword);
 // }
-passwordGenerator(12);
 
-function passwordGenerator(no_digits) {
-  var generatedPassword = "";
-  var char_list = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+//=======================Exercise #5====================
 
-  for (var i = 0; i < no_digits; i++) {
-    generatedPassword += char_list.charAt(Math.floor(Math.random() * char_list.length));
-  }
-console.log(generatedPassword);
+///This is my way but it is not correct need to be more specific!!!!....
+// weekend();
+// function weekend() {
+//   var day;
+//   var weekend;
+//
+//   switch (new Date().getDay()) {
+//     case 0:
+//     day = "Sunday"
+//       weekend = "tomorrow monday buuhhh";
+//       break;
+//     case 1:
+//     day = "Monday"
+//       weekend = "not the weekend";
+//       break;
+//     case 2:
+//     day = "Tuesday"
+//       weekend = "not the weekend";
+//       break;
+//     case 3:
+//     day = "Wednesday"
+//       weekend = "not the weekend";
+//       break;
+//     case 4:
+//     day = "Thursday"
+//       weekend = "not the weekend";
+//       break;
+//     case 5:
+//     day = "Friday"
+//       weekend = "hoy se bebeeee";
+//       break;
+//     case 6:
+//     day = "Saturday"
+//       weekend = "Yeeeyy The weekend here";
+//       break;
+//     default:
+//
+//   }
+//   console.log(day, weekend);
+// }
+
+//===============Same exercise (#5) different aproach.......
+
+function weekend() {
+  var dayOfWeek = new Date(inputDate).getDay();
+  
 }

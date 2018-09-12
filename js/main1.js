@@ -50,19 +50,30 @@
 //   }
 
 //======================Exercise #4=====================
-findInteger();
+// findInteger();
+//
+// function findInteger() {
+//
+//   for (var i = 0; i <= 100; i++) {
+//     if (i % 3 == 0 && i % 5 == 0) {
+//       console.log(i + " multiple of three and five");
+//     } else if(i % 3 == 0){
+//       console.log(i + " multiples of three");
+//     } else if (i % 5 == 0) {
+//       console.log(i + " multiples of five");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
+passwordGenerator(12);
 
-function findInteger() {
+function passwordGenerator(no_digits) {
+  var generatedPassword = "";
+  var char_list = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-  for (var i = 0; i <= 100; i++) {
-    if (i % 3 == 0 && i % 5 == 0) {
-      console.log(i + " multiple of three and five");
-    } else if(i % 3 == 0){
-      console.log(i + " multiples of three");
-    } else if (i % 5 == 0) {
-      console.log(i + " multiples of five");
-    } else {
-      console.log(i);
-    }
+  for (var i = 0; i < no_digits; i++) {
+    generatedPassword += char_list.charAt(Math.floor(Math.random() * char_list.length));
   }
+console.log(generatedPassword);
 }

@@ -107,8 +107,16 @@
 // }
 
 //===============Same exercise (#5) different aproach.......
+weekend("September 14, 2018");
 
-function weekend() {
+function weekend(inputDate) {
   var dayOfWeek = new Date(inputDate).getDay();
-  
+
+  if (dayOfWeek == 6 || dayOfWeek == 0) {
+    console.log(inputDate + " Yeeeeey the weekend is here");
+  } else if(dayOfWeek == 5) {
+    console.log(inputDate + " Hooooyy se beeebeeeeee");
+  } else {
+    console.log(inputDate + " Noooo is work day");
+  }
 }
